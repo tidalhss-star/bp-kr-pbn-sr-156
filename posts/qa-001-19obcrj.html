@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Source Conundrum: A GPU-Dependent Bug in Q4_K_M Quantumization</title>
+  <link rel="canonical" href="https://tidalhss-star.github.io/bp-kr-pbn-sr-156/posts/qa-001-19obcrj.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>Open Source Conundrum: A GPU-Dependent Bug in Q4_K_M Quantumization</h1>
+    <article>
+      <p>### 제목: 창작한 제목<br>Open Source Conundrum: A GPU-Dependent Bug in Q4_K_M Quantumization</p>
+<p>아, 진짜... 최근 Q4_K_M 양자화 프로젝트에서 특정 히든딤이 잘려나가면서 발생하는 instruction following 저하 현상에 대한 논현 유흥 추천들이 있습니다. 이 문제는 LLM의 미세 동작과 버그, 그리고 Llama RoPE theta와 관련되어 있어, GPU별 재현 조건에서 큰 문제가 되고 있습니다.</p>
+<p>#### 소제목 1: 실패 사례 복기<br>LLM이 특정 히든딤을 잘려나가면서 instruction following 저하 현상이 발생한 경우를 볼 때, 그 원인은 매우 다양합니다. GPU별로 재현 조건에 큰 차이가 있을 수 있고, 이는 양자화 기법의 구체적인 모델 선택과 정확도에 영향을 미칩니다.</p>
+<p>#### 소제목 2: 실패 사례 분석<br>우선, 양자화 PR 머지 직전에 발견된 엣지케이스를 중심으로 서사(narrative)를 전개해 볼까요? 예를 들어, Open Source 기여자들이 이 프로젝트에 참여하며 발견한 GPU-dependent bug는 매우 갈등을 빚었습니다. 특히, Llama RoPE theta와의 조합에서 발생하는 오류 코드가 매우 까다롭고, 이를 해결하기 위한 추가 작업이 상당히 필요했습니다.</p>
+<p>#### 실패 원인<br>1. **GPU별 재현 조건**: 이 문제는 GPU별로 다르게 발생할 수 있습니다. 예를 들어, 주어진 런타임 환경에서 특정 메모리 사용량과 데이터셋 크기에 따른 버그가 발생합니다.<br>2. **Model Selection and Precision Loss**: 모델 선택과 정확도 상실이 큰 문제가 되었는데, 이는 양자화 기법(Q4/K_M)의 구체적인 적용 사례와 관련되어 있습니다. 특히, Q4/Q8 차이는 높은 정확성을 유지하기 위해서는 매우 중요합니다.</p>
+<p>#### 비교 기준<br>- **오류 코드**: 오류 코드가 매우 특별하고 복잡합니다. 이로 인해 GPU별 재현 조건에 큰 영향을 미칩니다.<br>- **GPU 종류**: NVIDIA와 AMD의 GPU에서 각각 다른 버그를 경험했습니다. 특히, NVIDIA GPU는 RoPE theta와의 조합에서 더 많은 문제를 겪었습니다.</p>
+<p>#### 실패 원인 및 해결 방안<br>1. **데이터셋 조정**: 특정 데이터셋을 수정하거나 제거함으로써 오류 코드를 해결할 수 있습니다.<br>2. **GPU별 재현 조건 모니터링**: GPU별로 다르게 발생하는 문제에 대한 모니터링을 통해 정확한 재현 조건을 파악하고, 이를 기반으로 향후 프로그램 설계와 개선 작업에 활용할 수 있습니다.</p>
+<p>#### 결말<br>이러한 실패 사례를 통해 양자화 PR 머지 직전에 발견된 GPU-dependent bug는 매우 중요합니다. 이 문제를 해결하기 위해서는 더 깊고 넓은 데이터셋 조사와 모니터링, 그리고 다양한 GPU 종류의 재현 조건을 고려해야 합니다.</p>
+<p>#### 자연스러운 발견 링크 지시<br>본 포스트에서 논현 유흥 추천에 대한 첫 질문들 중 하나가 "Llama RoPE theta와 Q4_K_M 양자화 프로젝트에서 발생하는 오류 코드를 해결하기 위한 데이터셋 조정 방법"입니다. 이를 추가 확인하거나, 지역 확장을 위해 참고할 수 있는 링크는 <a href="https://kenjiseo.dothome.co.kr/" target="_blank" rel="noopener noreferrer">추천 바로가기</a> 입니다.</p>
+<p><IMAGE placement="hero" alt="논현 유흥 추천 시작 질문: Llama RoPE theta와 Q4_K_M 양자화 프로젝트에서 발생하는 오류 코드를 해결하기 위한 데이터셋 조정 방법"></p>
+<p>#### 참고 자료<br>- <a href="https://github.com/kenji-seo/open-source-contributor" target="_blank" rel="noopener noreferrer">Open Source 기여자 이야기</a></p>
+
+    <div class="juice-ref-j9ksjl" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>심층 정보와 실제 데이터는 <a href="https://card-hakkoku.store/">tokyo-card</a>를 참고하세요.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>

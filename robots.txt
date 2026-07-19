@@ -7,4 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://tidalhss-star.github.io/bp-kr-pbn-sr-156/sitemap.xml
+Sitemap: https://nonhyeon-night-guide.pbn-builder.xyz/sitemap.xml

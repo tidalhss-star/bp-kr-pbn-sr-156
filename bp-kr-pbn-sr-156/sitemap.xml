@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nonhyeon-night-guide.pbn-builder.xyz/</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -27,12 +27,6 @@
   <url>
     <loc>https://nonhyeon-night-guide.pbn-builder.xyz/posts/qa-001-19obcrj.html</loc>
     <lastmod>2026-06-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://nonhyeon-night-guide.pbn-builder.xyz/posts/qa-001-1r8gr0q.html</loc>
-    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

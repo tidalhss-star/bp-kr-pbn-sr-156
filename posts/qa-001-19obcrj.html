@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Open Source Conundrum: A GPU-Dependent Bug in Q4_K_M Quantumization</title>
-  <link rel="canonical" href="https://nonhyeon-night-guide.pbn-builder.xyz/posts/qa-001-19obcrj.html">
-  <style>
-    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
-    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
-    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
-    p { margin: 0 0 1em; }
-    a { color: #3182ce; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
-  <meta property="og:url" content="https://nonhyeon-night-guide.pbn-builder.xyz/posts/qa-001-19obcrj.html">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Open Source Conundrum: A GPU-Dependent Bug in Q4_K_M Quantumization</title>
+ <link rel="canonical" href="https://nonhyeon-night-guide.pbn-builder.xyz/posts/qa-001-19obcrj.html">
+ <style>
+ body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+ h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+ h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+ h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+ p { margin: 0 0 1em; }
+ a { color: #3182ce; text-decoration: none; }
+ a:hover { text-decoration: underline; }
+ </style>
+ <meta property="og:url" content="https://nonhyeon-night-guide.pbn-builder.xyz/posts/qa-001-19obcrj.html">
+ <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <meta property="og:title" content="Open Source Conundrum: A GPU-Dependent Bug in Q4_K_M Quantumization">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-  <header>
-    <a href="../index.html">← 목록으로 돌아가기</a>
-  </header>
-  <main>
+ <header>
+ <a href="./index.html">← 목록으로 돌아가기</a>
+ </header>
+ <main>
 <h2>논현의 밤을 밝히는 기술인들의 은밀한 모임</h2>
 <p>서울 강남구 논현동의 화려한 거리에는 밤이 깊어갈수록 불빛이 더욱 밝아집니다. 이 지역은 단순한 유흥을 넘어 다양한 분야의 전문가들이 모여 중요한 이야기를 나누는 장소로 유명합니다. 최근 이곳의 한 고급스러운 유흥 주점에서는 인공지능 업계의 핵심 개발자들이 모여 심도 있는 대화를 나누었습니다. 이들이 논의한 주제는 공개 출처 인공지능 진영에서 최근 발견된 심각한 연산 오작동 문제였습니다. 밤새 이어지는 화려한 접대와 술잔 속에서, 기술적인 난제를 해결하기 위한 이들의 토론은 매우 뜨겁게 달아올랐습니다.</p>
 
